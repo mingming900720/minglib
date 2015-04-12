@@ -19,7 +19,7 @@ function checkFile($dir) {
     $t = array();
     //检查如果$dir是一个文件夹则打开这个文件夹
     if (is_dir($dir) && $dh = opendir($dir)) {
-        //从打开的文件夹中读取文件直到读取失败或者读取完所有文件kjshdofho oi 啊skl；的纠纷解决撒；龙宽九段asdlfkjoh odjsajlk;jflk;j
+        //从打开的文件夹中读取文件直到读取失败或者读取完所有文件
         while (($file = readdir($dh)) !== false) {
             //当读取到的文件不在$t中的时候才进行判断
             if (!in_array($file, $t) ) {
